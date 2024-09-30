@@ -1,6 +1,5 @@
 # Hand-Writing-Recognition-Using-CNN
 
-Handwritten Digit Recognition Using CNN
 This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the MNIST dataset. The model is trained to classify digits from 0 to 9 by processing grayscale images of size 28x28. This repository provides the code to preprocess the dataset, define and train the CNN, and evaluate the model's performance.
 
 Table of Contents
@@ -41,13 +40,3 @@ Dropout:
 Dropout rate of 0.5.
 Dense Output Layer:
 10 neurons with softmax activation for multiclass classification.
-Model Summary
-Layer (type)	Output Shape	Param #
-conv2d (Conv2D)	(None, 26, 26, 32)	320
-conv2d_1 (Conv2D)	(None, 24, 24, 64)	18,496
-max_pooling2d (MaxPooling2D)	(None, 12, 12, 64)	0
-dropout (Dropout)	(None, 12, 12, 64)	0
-flatten (Flatten)	(None, 9216)	0
-dense (Dense)	(None, 256)	2,359,552
-dropout_1 (Dropout)	(None, 256)	0
-dense_1 (Dense)	(None, 10)	2,570
